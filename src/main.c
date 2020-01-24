@@ -6,7 +6,7 @@
 /*   By: mvan-eng <mvan-eng@student.codam.nl>         +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2019/10/24 16:08:05 by mvan-eng       #+#    #+#                */
-/*   Updated: 2020/01/16 17:56:54 by mvan-eng      ########   odam.nl         */
+/*   Updated: 2020/01/24 15:49:12 by mvan-eng      ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -40,6 +40,8 @@ int		main(void)
 		parse_token(fil);
 		calc_possibilities(fil);
 		print_coordinate(fil->pos.hor, fil->pos.ver);
+		fil->pos.hor = 0;
+		fil->pos.ver = 0;
 		fil->turn++;
 	}
 }
